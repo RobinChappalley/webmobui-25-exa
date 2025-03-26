@@ -3,7 +3,7 @@ class GenreItem extends HTMLElement {
   // artistList.appendChild(newElement)
   connectedCallback() {
     this.innerHTML = `
-         <a href="#" class="genre-card">
+         <a href="#${this.getAttribute("href")}" class="genre-card">
             <div class="card__buttons">
               <button type="button" class="icon-button like-button">
                 <span class="material-icons">thumb_up_off_alt</span>
