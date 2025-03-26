@@ -14,7 +14,7 @@ export const displayGenreList = async () => {
     genreItem.setAttribute("img_url", genre.thumbnail_url);
     genreItem.setAttribute("title", genre.title);
     genreItem.setAttribute("count", genre.count);
-    genreItem.setAttribute("href", `genres/${genre.id}/recipes`)
+    genreItem.setAttribute("href", `genres-${genre.id}/recipes`)
     genreList.appendChild(genreItem);
   });
 };
