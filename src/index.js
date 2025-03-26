@@ -1,5 +1,6 @@
 import {displaySection, activateLink} from './helpers.js'
-
+import "./sections/genres.js"
+import { displayGenreList } from './sections/genres.js'
 
 const routeur = () => {
   const hash = window.location.hash || '#genres'
@@ -11,6 +12,7 @@ const routeur = () => {
   switch(hashs[0]) {
     case '#genres':
       displaySection('genres')
+      displayGenreList()
     break;
 
     case '#inspiration':
