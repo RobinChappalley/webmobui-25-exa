@@ -4,7 +4,7 @@ class RecetteItem extends HTMLElement {
     connectedCallback() {
       this.innerHTML = `
           <div>
-            <img class="recipes__elem__preview" src=${this.getAttribute("img_url")}" />
+            <img class="recipes__elem__preview" src="${this.getAttribute("img_url")}" />
             <div class="recipes__elem__name">${this.getAttribute("name")}</div>
           </div>
         </div>
