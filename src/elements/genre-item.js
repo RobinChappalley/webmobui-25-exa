@@ -12,8 +12,6 @@ class GenreItem extends HTMLElement {
     this.render();
   }
   render() {
-    console.log(this.getAttribute("favorite"));
-    
     const icon =
       this.getAttribute("favorite") == "true" ? "thumb_up" : "thumb_up_off_alt";
     this.innerHTML = `
